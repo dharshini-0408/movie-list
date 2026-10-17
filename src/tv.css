@@ -1,0 +1,67 @@
+body {
+    background-color: #4c4c4c;
+    margin-top: 85px;
+    /* margin-bottom: -20px; */
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent; 
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+.tvContainer{
+    padding: 50px;
+}
+.movies-item img{
+  border-radius: 5px;
+}
+.img-containers{
+  height: 400px;
+  overflow: hidden;
+}
+.img-containers img{
+  width: 100%;
+  height: 100%; 
+  object-fit: fill;
+}
+/* Over Layer */
+.recentImg {
+  position: relative;
+  overflow: hidden;
+}
+
+.recentImg img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.recentImg img:hover {
+  transform: scale(1.1);
+}
+
+.recentImg .overlay {
+  background: rgba(0, 0, 0, 0.7); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.recentImg:hover .overlay {
+  opacity: 1;
+}
+
+.overlay i {
+  color: white;
+  font-size: 3rem; 
+}
+
+.overlay p {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
